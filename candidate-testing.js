@@ -23,7 +23,7 @@ console.log (`Contact Name: ${candidateName}`)
 //function askQuestion() {
 // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
 question =input.question ("1. Who was the first American woman in space? ");
-console.log (`Canidate answer: ${question}`)
+console.log (`Candidate answer: ${question}`)
 console.log (`Correct answer: ${correctAnswer}`)
 // .
 // function gradeQuiz(candidateAnswers) {
