@@ -3,10 +3,11 @@ const input = require('readline-sync');
 // TODO 2: modify your quiz app to ask 5 questions //
 
 // TODO 1.1a: Define candidateName // 
-let candidateName = input.question ("What is your name? ")
+let candidateName = input.question.contactName
+//("What is your name? ")
 
 // TODO 1.2a: Define question, correctAnswer, and candidateAnswer //
-let question =input.question ("1. Who was the first American woman in space? ");
+//let question =input.question ("1. Who was the first American woman in space? ");
 let correctAnswer = ('Sally Ride');
 let candidateAnswer = "";
 let questions;
@@ -15,12 +16,13 @@ let candidateAnswers;
 
 //function askForName() {
 // TODO 1.1b: Ask for candidate's name //
-//candidateName = input.question ("What is your name? ")
+candidateName = input.question ("What is your name? ")
+
 console.log (`Contact Name: ${candidateName}`)
 
 //function askQuestion() {
 // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
-
+question =input.question ("1. Who was the first American woman in space? ");
 console.log (`Canidate answer: ${question}`)
 console.log (`Correct answer: ${correctAnswer}`)
 // .
