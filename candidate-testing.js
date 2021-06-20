@@ -22,17 +22,21 @@ console.log (`${candidateName} Good Luck!`)
 //function askQuestion() {
 // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
 question =input.question ("1. Who was the first American woman in space? ");
-console.log (`Candidate answer: ${question}`)
-console.log (`Correct answer: ${correctAnswer}`)
 // .
 // function gradeQuiz(candidateAnswers) {
 
-//   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
 
+//   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
+console.log (`Candidate answer: ${question}`)
+//console.log (`Correct answer: ${correctAnswer}`)
  //}
 
 //   let grade = "Correct"
-  
+  if (candidateAnswer == correctAnswer) {
+    console.log ("Correct")
+  }else {
+   console.log ("Incorrect")
+  }
 
 //   return grade;
 // }
