@@ -32,13 +32,18 @@ console.log (`Candidate answer: ${question}`)
  //}
 
 //   let grade = "Correct"
-  if (candidateAnswer == correctAnswer) {
+  if (question == correctAnswer) {
     console.log ("Correct")
   }else {
    console.log ("Incorrect")
   }
 
 //   return grade;
+  if (question == correctAnswer) {
+    console.log('Pass')
+  }else{
+    console.log ('Fail')
+  }
 // }
 
 // function runProgram() {
