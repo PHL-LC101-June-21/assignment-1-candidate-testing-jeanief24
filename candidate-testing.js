@@ -1,7 +1,7 @@
 const input = require('readline-sync');
 
 // TODO 1.1a: Define candidateName // 
-let candidateName = input.question.candidateName
+let candidateName = ""
 //("What is your name? ")
 
 // TODO 1.2a: Define question, correctAnswer, and candidateAnswer //
