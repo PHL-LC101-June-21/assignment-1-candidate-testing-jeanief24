@@ -17,6 +17,7 @@ let candidateAnswers;
 candidateName = input.question ("What is your name? ")
 
 console.log (`Contact Name: ${candidateName}`)
+console.log (`${candidateName} Good Luck!`)
 
 //function askQuestion() {
 // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
