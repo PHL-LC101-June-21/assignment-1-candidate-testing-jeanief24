@@ -43,7 +43,8 @@ console.log (`${candidateName} Good Luck!`)
 
 //function askQuestion() {
 // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer
-for (let i = 0; i < questions.length; i++) {
+
+for (let i = 0; i < questions.length; i+=1) {
    console.log(questions[i]);
 }
 
