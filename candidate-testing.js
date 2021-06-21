@@ -60,10 +60,9 @@ console.log (`${candidateName} Good Luck!`)
 // .
 // function gradeQuiz(candidateAnswers) {
 
-//   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
-//console.log (`Candidate answer: ${question}`)
-//console.log (`Correct answer: ${correctAnswer}`)
- //}
+//   // TODO 1.2c: 
+// Replace the basic feedback from TODO 1.2c with a template literal that displays each of the candidate's responses in addition to the corresponding correct answers.
+
 
 //   let grade = "Correct"
 //   if (question == correctAnswer) {
