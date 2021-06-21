@@ -1,29 +1,30 @@
-const input = require('readline-sync');
+ const input = require('readline-sync');
 
 // TODO 1.1a: Define candidateName // 
 let candidateName = ""
-//("What is your name? ")
 
 // TODO 1.2a: Define question, correctAnswer, and candidateAnswer //
 //let question =input.question ("1. Who was the first American woman in space? ");
-let correctAnswer = ('Sally Ride');
-let candidateAnswer = "";
+//let correctAnswer = ('Sally Ride');
+//let candidateAnswer = "";
+//let candidateAnswers= []
+
+// Define questions and correctAnswers variables as arrays. Use the table below to fill these arrays.
 let questions = [
-  "Who was the first American woman in space?",
-  "True or false: 5 kilometer == 5000 meters?",
-  "(5+3)/2 * 10 = ?",
-  "Given the array [8, 'Orbit', 'Trajectory' 45], what entry is at index 2?"
+  ["1. Who was the first American woman in space?"],
+  ["2. True or false: 5 kilometer == 5000 meters?"],
+  ["3. (5+3)/2 * 10 = ?"],
+  ["4. Given the array [8, 'Orbit', 'Trajectory' 45], what entry is at index 2?]"
   ]
 
 let correctAnswers = [
-  "Sally Ride",
-  "true", "40",
-  "Trajectory", "3",
-  "What is the minimum crew size for the ISS?"
-  ]
+ ["Sally Ride"],
+ ["true", "40"],
+ ["Trajectory"], 
+ ["3"],
+ ["What is the minimum crew size for the ISS?"]
+ ]
 let candidateAnswers= []
-
-// Define questions and correctAnswers variables as arrays. Use the table below to fill these arrays.
 // Replace your code from TODO 1.2b with a loop that programmatically asks each question in the array and stores the user's responses.
 // Replace the basic feedback from TODO 1.2c with a template literal that displays each of the candidate's responses in addition to the corresponding correct answers.
 // Question	Answer
@@ -41,29 +42,32 @@ console.log (`Contact Name: ${candidateName}`)
 console.log (`${candidateName} Good Luck!`)
 
 //function askQuestion() {
-// TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
-question =input.question ("1. Who was the first American woman in space? ");
+// TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer
+for (let i = 0; i < questions.length; i++) {
+   console.log(questions[i]);
+}
+
 // .
 // function gradeQuiz(candidateAnswers) {
 
 //   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
-console.log (`Candidate answer: ${question}`)
+//console.log (`Candidate answer: ${question}`)
 //console.log (`Correct answer: ${correctAnswer}`)
  //}
 
 //   let grade = "Correct"
-  if (question == correctAnswer) {
-    console.log ("Correct")
-  }else {
-   console.log ("Incorrect")
-  }
+//   if (question == correctAnswer) {
+//     console.log ("Correct")
+//   }else {
+//    console.log ("Incorrect")
+//   }
 
-//   return grade;
-  if (question == correctAnswer) {
-    console.log('Pass')
-  }else{
-    console.log ('Fail')
-  }
+// //   return grade;
+//   if (question == correctAnswer) {
+//     console.log('Pass')
+//   }else{
+//     console.log ('Fail')
+//   }
 // }
 
 // function runProgram() {
