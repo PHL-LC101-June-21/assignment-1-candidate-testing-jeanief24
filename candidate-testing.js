@@ -18,19 +18,28 @@ let questions = [
  ["4. Given the array 8, 'Orbit', 'Trajectory' 45 what entry is at index 2?","Trajectory"],
  ["What is the minimum crew size for the ISS?", "3"]
  ]
+let correctAnswers = 0
+let candidateAnswers = 0 //store candidate answers
 
-let correctAnswers = [
-  ["Sally Ride"],
-  ["True"],
-  ["40"],
-  ["Trajectory"],
-  ["3"]
-];
 
 // Replace your code from TODO 1.2b with a loop that programmatically asks each question in the array and stores the user's responses.
+for (var i = 0; i < questions.length; i++) {
+    var answer = console.log (questions[i][0]);
+    if (answer == questions[i][1]) {
+        cosole.log ("Correct " + questions[i][2]);
+        correctAnswers++;
+    }
+    else {
+        console.log ("Incorrect, the correct answer was " + questions[i][1]);
+    }
+}
 
 
 // Replace the basic feedback from TODO 1.2c with a template literal that displays each of the candidate's responses in addition to the corresponding correct answers.
+// console.log (`"Candidate Answer: "${CandidateAnswers[i] [0]})
+// console.log (`Correct Answer: " ${CorrectAnswers [i][0]}`)
+// \n
+
 // Question	Answer
 // Who was the first American woman in space?	"Sally Ride"
 // True or false: 5 kilometer == 5000 meters?	"true"
@@ -63,6 +72,7 @@ console.log (`${candidateName} Good Luck!`)
 //   // TODO 1.2c: 
 // Replace the basic feedback from TODO 1.2c with a template literal that displays each of the candidate's responses in addition to the corresponding correct answers.
 
+conssole.log ('Candidate Answer: ${candidateAnswer} Correct Answer: ${correctAnswers}')
 
 //   let grade = "Correct"
 //   if (question == correctAnswer) {
