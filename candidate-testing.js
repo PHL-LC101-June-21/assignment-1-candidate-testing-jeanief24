@@ -44,6 +44,9 @@ for (var i = 0; i < questions.length; i++) {
   console.log (candidateAnswer)
   console.log(`Your answer: ${candidateAnswers[i]}\nCorrect answer: ${correctAnswers[i]}\n`);       
 }
+}
+// .
+ function gradeQuiz(candidateAnswers) {
 let totalGrade=0
 for (let i = 0; i < correctAnswers.length; i++) {
   let grade = (totalGrade / questions.length) * 100;
@@ -57,9 +60,7 @@ for (let i = 0; i < correctAnswers.length; i++) {
 
   return grade;
 }
-// .
- function gradeQuiz(candidateAnswers) {
-
+}
 //   // TODO 1.2c: 
 // Replace the basic feedback from TODO 1.2c with a template literal that displays each of the candidate's responses in addition to the corresponding correct answers.
 let totalGrade = 0
