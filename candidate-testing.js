@@ -60,18 +60,12 @@ if (grade >= 80) {
 } else {
   candidateStatus = "FAILED"
 }
-console.lot (`>> Overall Grade: ${grade} (${totalGrade} of (${questions.length} responses correct) <<<\n>>> Status: ${candidateStatus} <<<`)
+console.log (`>>> Overall Grade: ${grade}% (${totalGrade} of (${questions.length} responses correct) <<<\n>>> Status: ${candidateStatus} <<<`)
   
   return grade;
 }
 //   // TODO 1.2c: 
 // Replace the basic feedback from TODO 1.2c with a template literal that displays each of the candidate's responses in addition to the corresponding correct answers.
-let totalGrade = 0
-for (let i = 0; i < correctAnswers.length; i++) {
-    if (candidateAnswers[i].toLowerCase() === correctAnswers[i].toLowerCase()) {
-      totalGrade++;
-    }
-  }
 
  function runProgram() {
    askForName();
