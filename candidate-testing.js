@@ -47,16 +47,7 @@ for (var i = 0; i < questions.length; i++) {
 }
 // .
  function gradeQuiz(candidateAnswers) {
-let totalGrade=0
-for (let i = 0; i < correctAnswers.length; i++) {
-  let grade = (totalGrade / questions.length) * 100;
-  let candidateStatus = "";
-  if (grade >= 80) {
-    candidateStatus = "SUCCESS";
-  } else {
-    candidateStatus = "FAILED";
-  }
-  console.log(`>>> Overall Grade: ${grade}% (${totalGrade} of ${questions.length} responses correct) <<<\n>>> Status: ${candidateStatus} <<<`);
+let totalGrade = 0
 
   return grade;
 }
