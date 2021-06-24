@@ -48,9 +48,21 @@ for (var i = 0; i < questions.length; i++) {
 // .
  function gradeQuiz(candidateAnswers) {
 let totalGrade = 0
-
-  return grade;
+for (let i = 0; i < correctAnswers.length; i++) {
+  if (candidateAnswers[i].toLowerCase() === correctAnswers [i].toLowerCase()) { 
+    totalGrade++;
+  }
 }
+let grade = (totalGrade/questions.length)* 100;
+let candidateStatus = "";
+if (grade >= 80) {
+  candidateStatus= "SUCCESS";
+} else {
+  candidateStatus = "FAILED"
+}
+console.lot (`>> Overall Grade: ${grade} (${totalGrade} of (${questions.length} responses correct) <<<\n>>> Status: ${candidateStatus} <<<`)
+  
+  return grade;
 }
 //   // TODO 1.2c: 
 // Replace the basic feedback from TODO 1.2c with a template literal that displays each of the candidate's responses in addition to the corresponding correct answers.
@@ -60,9 +72,6 @@ for (let i = 0; i < correctAnswers.length; i++) {
       totalGrade++;
     }
   }
-
-
- }
 
  function runProgram() {
    askForName();
